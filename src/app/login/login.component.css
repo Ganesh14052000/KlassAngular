@@ -1,0 +1,40 @@
+/* Set the body background to black */
+
+  
+  /* Set the :host to be centered and apply a dark background color */
+  :host {
+    display: flex;
+    justify-content: center;
+   padding-top: 180px;/* Ensure the entire page is taken up */
+    align-items: center; /* Vertically center the content */
+  }
+  
+  /* Card background and styling */
+  mat-card {
+   
+    width: 500px;  /* Set a fixed width for the card */
+    border-radius: 20px 20px 20px 20px;  /* Optional: add rounded corners to the card */
+  }
+  
+  /* Ensure the form fields have proper spacing and alignment */
+  mat-form-field {
+    margin-top: 20px;
+    width: 400px;
+    /* Add space between fields */
+  }
+  input{
+    width: 100%;
+  }
+  /* Center text in mat-card-title and mat-card-content */
+  mat-card-title,
+  mat-card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .button {
+    text-align: center;  /* Center the login button */
+  }
+  
