@@ -1,29 +1,29 @@
+<mat-card>
+  <mat-card-title style="background-color: rgb(0, 150, 255); color: aliceblue; height: 70px; font-size: xx-large; text-shadow: 0px 0px 1px rgb(5, 4, 4); border-radius: 20px 20px 0px 0px;">
+    <span><i style="font-size: 25px;" class="fa-solid fa-pen-nib"></i></span>Klassakt eLearning
+  </mat-card-title>
+  <mat-card-content>
+    <form (ngSubmit)="Login(myForm)" #myForm="ngForm">
+      <p>
+        <mat-form-field appearance="fill">
+          <i class="fa-regular fa-id-card" style="color: rgb(46, 45, 45); font-size: 25px; padding: 5px;" matPrefix></i>
+          <input type="text" matInput placeholder="Username" [(ngModel)]="username" name="username" required>
+        </mat-form-field>
+      </p>
 
-<mat-card >
-    <mat-card-title style="background-color: rgb(0, 150, 255);  color: aliceblue  ;height: 70px;font-size: xx-large;text-shadow: 0px 0px 1px rgb(5, 4, 4);border-radius: 20px 20px 0px 0px;"> <span><i style="font-size: 25px;" class="fa-solid fa-pen-nib"></i></span>Klassakt eLearning</mat-card-title>
-<mat-card-content>
-<form>
-  <p>
-    <mat-form-field appearance="fill">
-        <i class="fa-regular fa-id-card" style="color: rgb(46, 45, 45);font-size: 25px;padding: 5px;" matPrefix></i>
-      <input type="text" matInput placeholder="Username" >
-    </mat-form-field>
-  </p>
+      <p>
+        <mat-form-field appearance="fill">
+          <i class="fa fa-eye" style="color: rgb(46, 45, 45); font-size: 25px; padding: 5px;" matPrefix></i>
+          <input type="password" matInput placeholder="Password" [(ngModel)]="password" name="password" required>
+        </mat-form-field>
+      </p>
 
-  <p>
-    <mat-form-field>
-        <i class="fa fa-eye" style="color:  rgb(46, 45, 45);font-size: 25px;padding: 5px;" matPrefix></i>
-      <input type="password" matInput placeholder="Password" >
-    </mat-form-field>
-  </p>
-  
-  <div class="button" style="margin-left: 200px;">
-    <button mat-flat-button (click)="Login()">Login</button>
-    <button mat-flat-button>Clear</button>
-  </div>
-  
-
-</form>
-</mat-card-content>
+      <div class="button" style="margin-left: 200px;">
+        <button type="submit" mat-flat-button>Login</button>
+        <button type="button" mat-flat-button >Clear</button>
+      </div>
+    </form>
+  </mat-card-content>
 </mat-card>
+
 
